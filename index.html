@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Deep Radio</title>
+
+		<!-- my JS -->
+		<script src="JS/tabs.js"></script>
+		<!-- my CSS -->
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<!-- Bootstrap 4 -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Bootstrap core CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Material Design Bootstrap -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.14/css/mdb.min.css" rel="stylesheet">
+
+		<!-- JQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.14/js/mdb.min.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<nav class="navbar navbar-light navbar-static-top fixed-top">
+		  <a class="navbar-brand" href="#" style="color: white;">
+		    <img src="https://cdn3.iconfinder.com/data/icons/ultimate-social/150/41_itunes-512.png" width="30" height="30" class="d-inline-block align-top" alt="">
+		    Deep radio
+		  </a>
+		  <a class="nav-item nav-link active" href="infos.html" style="color: white;">
+		  	Infos 
+		  	<span class="sr-only">(current)</span>
+		  </a>
+		</nav>
+
+	</header>
+
+	
+	<h2 id="hometext"><span style="border-radius: 8px;" class="badge badge-light"> Welcome to Deep Radio, relax and enjoy radios 🎶 </span></h2>
+
+	<div id="divradio">
+		<!-- Tab links -->
+		<div class="tab">
+		  <button class="tablinks" onclick="openRadio(event, 'nrj')">NRJ</button>
+		  <button class="tablinks" onclick="openRadio(event, 'funradio')">FunRadio</button>
+		  <button class="tablinks" onclick="openRadio(event, 'fip')">Fip</button>
+		  <button class="tablinks" onclick="openRadio(event, 'rtl2')">RTL2</button>
+		</div>
+
+		<!-- Tab content -->
+		<div id="nrj" class="tabcontent">
+			<h3><span class="badge badge-pill badge-dark">Click the logo to play the Radio :)</span></h3>
+		  	<a onclick="document.getElementById('1_audio').play();">
+     			<img src="http://image.noelshack.com/fichiers/2018/46/1/1542023843-logo-nrj2.png"">
+     			<audio id="1_audio" src="http://listen.radionomy.com/nrjpremium" preload="none"></audio>
+			</a>
+			<br>
+			<br>
+			<h3><span class="badge badge-pill badge-dark">
+			<a onclick="document.getElementById('1_audio').pause();">PAUSE</a>
+			</span>
+			</h3>
+			<br>
+		</div>
+
+		<div id="funradio" class="tabcontent">
+			<h3><span class="badge badge-pill badge-dark">Click the logo to play the Radio :)</span></h3>
+		  	<a onclick="document.getElementById('2_audio').play();">
+     			<img style="width: 65%; height: auto;" src="http://image.noelshack.com/fichiers/2018/46/1/1542025345-fun-radio-2-logo-png-transparent2.png">
+     			<audio id="2_audio" src="http://listen.radionomy.com/funradio" preload="none"></audio>
+			</a>
+			<br>
+			<h3><span class="badge badge-pill badge-dark">
+			<a onclick="document.getElementById('2_audio').pause();">PAUSE</a>
+			</span>
+			</h3>
+			<br>
+		</div>
+
+		<div id="fip" class="tabcontent">
+			<h3><span class="badge badge-pill badge-dark">Click the logo to play the Radio :)</span></h3>
+			<br>
+
+		  	<a onclick="document.getElementById('3_audio').play();">
+     			<img style="width: 40%; height: auto;" style="width: 75%; height: auto;" src="http://image.noelshack.com/fichiers/2018/46/1/1542026259-1200px-fip-logo-2005-svg2.png">
+     			<audio id="3_audio" src="https://chai5she.cdn.dvmr.fr/fip-midfi.mp3?ID=radiofrance" preload="none"></audio>
+			</a>
+			<br>
+			<br>
+			<br>
+			<h3><span class="badge badge-pill badge-dark">
+			<a onclick="document.getElementById('3_audio').pause();">PAUSE</a>
+			</span>
+			</h3>
+		</div>
+
+		<div id="rtl2" class="tabcontent">
+			<h3><span class="badge badge-pill badge-dark">Click the logo to play the Radio :)</span></h3>
+			<br>
+		  	<a onclick="document.getElementById('4_audio').play();">
+     			<img style="width: 40%; height: auto;" style="width: 75%; height: auto;" src="http://image.noelshack.com/fichiers/2018/46/1/1542026587-1024px-rtl2-logo-2015-svg2.png">
+     			<audio id="4_audio" src="http://streaming.radio.rtl2.fr/rtl2-1-48-192" preload="none"></audio>
+			</a>
+			<br>
+			<br>
+			<br>
+			<h3><span class="badge badge-pill badge-dark">
+			<a onclick="document.getElementById('4_audio').pause();">PAUSE</a>
+			</span>
+			</h3>
+			<br>
+		</div>
+
+	</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+</body>
+<footer class="page-footer font-small footer-transparent">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+      <!--Grid row-->
+      <div class="row">
+
+
+      </div>
+      <!--Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a target="_blank" rel="noopener noreferrer"  href="https://soundcloud.com/itsomegad">@Omegad</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+</html>
