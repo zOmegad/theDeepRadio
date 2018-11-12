@@ -100,6 +100,9 @@ nav {
 
 /* Style the tab content */
 .tabcontent {
+
+	transition-property: all;
+	transition-duration: .5s;
 	
 	text-align: center;
     display: none;
@@ -112,4 +115,47 @@ nav {
     border-top: none;
     background-color: transparent;
     color: white;
+
+}
+
+/* Volume Slider */
+
+.slidecontainer {
+	text-align: center;
+    width: 100%;
+}
+
+.slider {
+	
+    -webkit-appearance: none;
+    width: 20%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: url('http://image.noelshack.com/fichiers/2018/46/1/1542038590-if-music-player-1645996.png');
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: url('http://image.noelshack.com/fichiers/2018/46/1/1542038590-if-music-player-1645996.png');
+    cursor: pointer;
 }
