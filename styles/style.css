@@ -1,5 +1,13 @@
+html {
+  
+  height: 100%;
+
+}
+
 body {
 
+	min-height: 100%;
+  	display: grid;
 	background-image: url(http://image.noelshack.com/fichiers/2018/46/1/1542017496-milky-way.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,7 +16,10 @@ body {
 
 footer {
 
-	position: fixed;
+	grid-row-start: 8;
+  	grid-row-end: 9;
+
+	position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
