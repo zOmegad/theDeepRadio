@@ -1,6 +1,6 @@
 # theDeepRadio 🎶
 
-## https://thedeepradio.herokuapp.com/index.html
+## https://zomegad.github.io/thedeepradio/
 
 Just a website with radios made with HTML, CSS, JavaScript, JQuery and Love.
 
