@@ -69,14 +69,26 @@
     	<a id="button-background" href="javascript:"><img src="http://image.noelshack.com/fichiers/2018/46/1/1542058717-5089249.jpeg" style="border-style: solid; border-width: 3px; border-color: white; border-radius: 8px; border-radius: 50%; width: 85px; height: auto;"></a>
 	</div>
 
-	<script type="text/javascript">
-			
-		$('#button-background').on('click', function() {
+	<script type="text/javascript" >
+
+		clicked = true;	
+		$(document).ready ( function () {
+	    $(document).on ("click", "#button-background", function () {
+    	if (clicked){
     	$('body').css('background-image', 'url(http://image.noelshack.com/fichiers/2018/46/1/1542061146-galaxy-space-red-128770-1600x900.jpg)');
     	$('nav').css('background-image', 'url(http://image.noelshack.com/fichiers/2018/46/1/1542061146-galaxy-space-red-128770-1600x900.jpg)');
     	$('footer').css('background-image', 'url(http://image.noelshack.com/fichiers/2018/46/1/1542061146-galaxy-space-red-128770-1600x900.jpg)');
     	$('div#back').html('<a id="button-background" href="javascript:"><img src="https://at-cdn-s01.audiotool.com/2012/06/11/documents/KmtKAOyrXXhbLljeworCHj6r3Au2j/0/cover256x256-6bcce4f28f0b451e95d61ccb25420634.jpg" style="border-style: solid; border-width: 3px; border-color: white; border-radius: 8px; border-radius: 50%; width: 85px; height: auto;"></a>');
-		})
+    	clicked = false;
+    		} else {
+    			$('body').css('background-image', 'url(http://image.noelshack.com/fichiers/2018/46/1/1542017496-milky-way.jpg)');
+    	$('nav').css('background-image', 'url(http://image.noelshack.com/fichiers/2018/46/1/1542017496-milky-way.jpg)');
+    	$('footer').css('background-image', 'url(http://image.noelshack.com/fichiers/2018/46/1/1542017496-milky-way.jpg)');
+    	$('div#back').html('<a id="button-background" href="javascript:"><img src="http://image.noelshack.com/fichiers/2018/46/1/1542058717-5089249.jpeg" style="border-style: solid; border-width: 3px; border-color: white; border-radius: 8px; border-radius: 50%; width: 85px; height: auto;"></a>');
+    	clicked = true;
+    		}
+		});
+	});
 		
 	</script>
 
@@ -104,7 +116,6 @@
 			</h3>
 			<br>
 		</div>
-
 		<div id="funradio" class="tabcontent">
 			<h3><span class="badge badge-pill badge-dark">Click the logo to play the Radio :)</span></h3>
 		  	<a onclick="document.getElementById('2_audio').play();">
@@ -118,11 +129,9 @@
 			</h3>
 			<br>
 		</div>
-
 		<div id="fip" class="tabcontent">
 			<h3><span class="badge badge-pill badge-dark">Click the logo to play the Radio :)</span></h3>
 			<br>
-
 		  	<a onclick="document.getElementById('3_audio').play();">
      			<img style="width: 40%; height: auto;" style="width: 75%; height: auto;" src="http://image.noelshack.com/fichiers/2018/46/1/1542026259-1200px-fip-logo-2005-svg2.png">
      			<audio id="3_audio" src="https://chai5she.cdn.dvmr.fr/fip-midfi.mp3?ID=radiofrance" preload="none"></audio>
@@ -135,7 +144,6 @@
 			</span>
 			</h3>
 		</div>
-
 		<div id="rtl2" class="tabcontent">
 			<h3><span class="badge badge-pill badge-dark">Click the logo to play the Radio :)</span></h3>
 			<br>
@@ -152,11 +160,8 @@
 			</h3>
 			<br>
 		</div>
-
 	</div>
 		<div id="siri-container"></div>
-
-
 		<br>
 		<br>
 		<br>
@@ -165,26 +170,19 @@
 	
 </body>
 <footer class="page-footer font-small footer-transparent">
-
     <!-- Footer Elements -->
     <div class="container">
-
       <!--Grid row-->
       <div class="row">
-
-
       </div>
       <!--Grid row-->
-
     </div>
     <!-- Footer Elements -->
-
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2018 Copyright:
       <a target="_blank" rel="noopener noreferrer"  href="https://soundcloud.com/itsomegad">@Omegad</a>
     </div>
     <!-- Copyright -->
-
   </footer>
   <!-- Footer -->
 </html>

@@ -2,10 +2,10 @@ html {
   
   height: 100%;
   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    animation: fadein 1.5s;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  animation: fadein 1.5s;
 
 }
 
@@ -35,7 +35,7 @@ footer {
     background-image: url(http://image.noelshack.com/fichiers/2018/46/1/1542017496-milky-way.jpg);
     color: white;
     text-align: center;
-      -webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -45,10 +45,10 @@ footer {
 nav {
 
 	background-image: url(http://image.noelshack.com/fichiers/2018/46/1/1542017496-milky-way.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 }
 
@@ -198,5 +198,5 @@ nav {
 }
 
 #destroy {
-  
+
 }
