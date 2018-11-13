@@ -23,6 +23,7 @@ body {
 
 }
 
+
 footer {
 
 	grid-row-start: 8;
@@ -51,6 +52,16 @@ nav {
   background-size: cover;
 
 }
+
+/** to make rotate the background button :) **/
+.rotation-image {
+
+-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+
+}
+
 
 .round-avatar {
 
